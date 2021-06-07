@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/react-starter-template/static/css/main.4581b267.chunk.css",
-    "main.js": "/react-starter-template/static/js/main.c315963a.chunk.js",
-    "main.js.map": "/react-starter-template/static/js/main.c315963a.chunk.js.map",
-    "runtime-main.js": "/react-starter-template/static/js/runtime-main.f9d05c72.js",
-    "runtime-main.js.map": "/react-starter-template/static/js/runtime-main.f9d05c72.js.map",
-    "static/js/2.d263e005.chunk.js": "/react-starter-template/static/js/2.d263e005.chunk.js",
-    "static/js/2.d263e005.chunk.js.map": "/react-starter-template/static/js/2.d263e005.chunk.js.map",
-    "index.html": "/react-starter-template/index.html",
-    "precache-manifest.72c650eba794a1e4894c4b8b1b3bf91f.js": "/react-starter-template/precache-manifest.72c650eba794a1e4894c4b8b1b3bf91f.js",
-    "service-worker.js": "/react-starter-template/service-worker.js",
-    "static/css/main.4581b267.chunk.css.map": "/react-starter-template/static/css/main.4581b267.chunk.css.map",
-    "static/js/2.d263e005.chunk.js.LICENSE.txt": "/react-starter-template/static/js/2.d263e005.chunk.js.LICENSE.txt"
+    "main.css": "/ux-q4-react-todo-app-JonathanPynes/static/css/main.4581b267.chunk.css",
+    "main.js": "/ux-q4-react-todo-app-JonathanPynes/static/js/main.c315963a.chunk.js",
+    "main.js.map": "/ux-q4-react-todo-app-JonathanPynes/static/js/main.c315963a.chunk.js.map",
+    "runtime-main.js": "/ux-q4-react-todo-app-JonathanPynes/static/js/runtime-main.eba3001d.js",
+    "runtime-main.js.map": "/ux-q4-react-todo-app-JonathanPynes/static/js/runtime-main.eba3001d.js.map",
+    "static/js/2.d263e005.chunk.js": "/ux-q4-react-todo-app-JonathanPynes/static/js/2.d263e005.chunk.js",
+    "static/js/2.d263e005.chunk.js.map": "/ux-q4-react-todo-app-JonathanPynes/static/js/2.d263e005.chunk.js.map",
+    "index.html": "/ux-q4-react-todo-app-JonathanPynes/index.html",
+    "precache-manifest.e113bdae3d2ce5b5322909a2e7cd5cd8.js": "/ux-q4-react-todo-app-JonathanPynes/precache-manifest.e113bdae3d2ce5b5322909a2e7cd5cd8.js",
+    "service-worker.js": "/ux-q4-react-todo-app-JonathanPynes/service-worker.js",
+    "static/css/main.4581b267.chunk.css.map": "/ux-q4-react-todo-app-JonathanPynes/static/css/main.4581b267.chunk.css.map",
+    "static/js/2.d263e005.chunk.js.LICENSE.txt": "/ux-q4-react-todo-app-JonathanPynes/static/js/2.d263e005.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.f9d05c72.js",
+    "static/js/runtime-main.eba3001d.js",
     "static/js/2.d263e005.chunk.js",
     "static/css/main.4581b267.chunk.css",
     "static/js/main.c315963a.chunk.js"
