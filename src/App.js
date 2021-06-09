@@ -2,6 +2,33 @@ import React from "react";
 import "./App.css";
 import hamburger from "./images/Hamburger Menu.svg";
 import profile from "./images/Profile b&w.jpg";
+const todoList = [
+  {
+    id: 1,
+    title: "item title",
+    description: "your description",
+    completed: false,
+  },
+  {
+    id: 2,
+    title: "item title",
+    description: "your description",
+    completed: false,
+  },
+  {
+    id: 3,
+    title: "item title",
+    description: "your description",
+    completed: true,
+  },
+];
+
+const user = [
+  {
+    userName: "Jon Pynes",
+    avatarUrl: "",
+  },
+];
 
 function App() {
   let myVariable = "I am a variable!";
@@ -9,6 +36,7 @@ function App() {
   let purpleDino = "I am a purple Dino";
   let imgMaybe =
     "Jake or who ever is grading this... can I use these variable to switch between pics after a click event?";
+
   return (
     <div className="App">
       <header className="App-header">
@@ -23,6 +51,19 @@ function App() {
               <li className="Todo-ul-li">Expose the evidence</li>
               <li className="Todo-ul-li">Practice Yoga</li>
             </ul>
+          </div>
+          <div>
+            {user.map((userInfo) => (
+              <p>{userInfo.userName}</p>
+            ))}
+          </div>
+          <div>
+            {todoList.map((todoItem) => (
+              <p>
+                {todoItem.title} {todoItem.id}
+                <input type="checkbox" checked={todoItem.completed} />
+              </p>
+            ))}
           </div>
         </div>
         <div className="Done">
