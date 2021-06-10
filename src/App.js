@@ -2,81 +2,43 @@ import React from "react";
 import "./App.css";
 import hamburger from "./images/Hamburger Menu.svg";
 import profile from "./images/Profile b&w.jpg";
-const todoList = [
-  {
-    id: 1,
-    title: "item title",
-    description: "your description",
-    completed: false,
-  },
-  {
-    id: 2,
-    title: "item title",
-    description: "your description",
-    completed: false,
-  },
-  {
-    id: 3,
-    title: "item title",
-    description: "your description",
-    completed: true,
-  },
-];
-
-const user = [
-  {
-    userName: "Jon Pynes",
-    avatarUrl: "",
-  },
-];
+import Sidebar from "./Components/Sidebar";
+import TodoItem from "./Components/TodoItem";
 
 function App() {
-  let myVariable = "I am a variable!";
-  let myOtherVariable = "I am variable #2";
-  let purpleDino = "I am a purple Dino";
-  let imgMaybe =
-    "Jake or who ever is grading this... can I use these variable to switch between pics after a click event?";
+  let data = {
+    user: {
+      name: "Jon",
+      avavtar: profile,
+    },
+    todoList: [
+      {
+        title: "Finish portfolio",
+        description: "finish the portfolio",
+        completed: false,
+      },
+      {
+        title: "Feed Dog",
+        description: "Take out food and fee dog",
+        completed: true,
+      },
+      {
+        title: "Finish portfolio",
+        description: "Do HTML, CSS and JavaScript",
+        completed: false,
+      },
+    ],
+  };
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={hamburger} className="Hamburger-menu" alt="" />
-        <img src={profile} className="Profile-img" alt="" />
-        <h1 className="Profile-name">Jonathan Pynes</h1>
-        <div className="Todo">
-          <h1 className="Todo-header">Todo</h1>
-          <div className="Todo-ul-li-container">
-            <ul className="Todo-ul">
-              <li className="Todo-ul-li">Take out the trash</li>
-              <li className="Todo-ul-li">Expose the evidence</li>
-              <li className="Todo-ul-li">Practice Yoga</li>
-            </ul>
-          </div>
-          <div>
-            {user.map((userInfo) => (
-              <p>{userInfo.userName}</p>
-            ))}
-          </div>
-          <div>
-            {todoList.map((todoItem) => (
-              <p>
-                {todoItem.title} {todoItem.id}
-                <input type="checkbox" checked={todoItem.completed} />
-              </p>
-            ))}
-          </div>
-        </div>
-        <div className="Done">
-          <h1 className="Done-header">Done</h1>
-          <div className="Done-ul-li-container">
-            <ul className="Done-ul">
-              <li className="Done-ul-li">Turn off the stove</li>
-              <li className="Done-ul-li">Meditation</li>
-              <li className="Done-ul-li">RockStar banner</li>
-            </ul>
-          </div>
-        </div>
-      </header>
+    <div>
+      <Sidebar user={data.user} />
+      <h1>Todos</h1>
+      <ul>
+        {data.todoList.map((item) => (
+          <TodoItem todo={item} />
+        ))}
+      </ul>
     </div>
   );
 }
