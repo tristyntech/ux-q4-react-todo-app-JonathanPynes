@@ -37,7 +37,12 @@ const [user, setUser] = useState(
 
 const [title, setTitle] = useState("")
 const [description, setDescription] = useState("")
+// const [completed, setCompleted] = useState(false)
 
+
+// function handleChangeCompleted(e) {
+//   setCompleted(e.target.value)
+// }
 
 function handleChangeTitle(e) {
   setTitle(e.target.value)
