@@ -47,6 +47,9 @@ function handleChangeDescription(e) {
 }
 
 const handleButtonClick = ()=>{
+  if(title === "" || description === ""){
+    return
+  }
   setTodoList(prevList=> [...prevList, {title: title, description: description, completed: false}])
  }
  
