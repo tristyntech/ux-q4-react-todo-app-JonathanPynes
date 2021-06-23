@@ -1,6 +1,6 @@
 import React from "react";
 
-function TodoItem(props) {
+const TodoItem = (props) => {
   return (
     <li className="todo_item">
       <p>{props.todo.title}</p>
