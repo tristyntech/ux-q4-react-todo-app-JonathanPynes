@@ -38,9 +38,6 @@ const [user, setUser] = useState(
 const [title, setTitle] = useState("")
 const [description, setDescription] = useState("")
 
-const handleButtonClick = ()=>{
- setTodoList(prevList=> [...prevList, {completed: false, title: "", description: ""}])
-}
 
 function handleChangeTitle(e) {
   setTitle(e.target.value)
@@ -49,7 +46,10 @@ function handleChangeDescription(e) {
   setDescription(e.target.value)
 }
 
-
+const handleButtonClick = ()=>{
+  setTodoList(prevList=> [...prevList, {title: title, description: description, completed: false}])
+ }
+ 
 
   return (
     <React.Fragment>
@@ -60,23 +60,22 @@ function handleChangeDescription(e) {
           <TodoItem todo={item} />
         ))}
         </ul>
-        <>
         <form>
           <label>Add a Title</label>
-          <input>
+          <input
           id="new-title"
           onChange={handleChangeTitle}
           value= {title}
-          </input>
+          />
           <label>Add the description</label>
-          <input>
+          <input
           id="new-description"
           onChange={handleChangeDescription}
           value={description}
-          </input>
+          />
         </form>
         <button onClick={()=> handleButtonClick()}>CLICK ME</button>
-        </>
+        
       <h2>COMPLETED TODO'S</h2>
       <ul>
        {todoList.filter(item=> item.completed).map((item) => (
