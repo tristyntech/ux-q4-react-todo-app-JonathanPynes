@@ -7,8 +7,7 @@ const TodoItem = (props) => {
     <li className="todo_item">
       <p>{props.todo.title}</p>
       <input type="checkbox" defaultChecked={props.todo.completed} /> 
-      {/* onChange={handleChangeCompleted} value= {completed} /> */}
-    </li>
+      </li>
   );
 }
 

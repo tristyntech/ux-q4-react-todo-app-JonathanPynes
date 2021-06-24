@@ -32,17 +32,24 @@ const [user, setUser] = useState(
     name: "Jon",
     avatar: profile,
   }
-  
 );
+  // function HeaderBar() {
+  //   const user = useContext(CurrentUser);
+  //   const notifications = useContext(Notifications);
+  
+  //   return (
+  //     <header>
+  //       Welcome back, {user.name}!
+  //       You have {notifications.length} notifications.
+  //     </header>
+  //   );
+  // }
+  
+
 
 const [title, setTitle] = useState("")
 const [description, setDescription] = useState("")
-// const [completed, setCompleted] = useState(false)
 
-
-// function handleChangeCompleted(e) {
-//   setCompleted(e.target.value)
-// }
 
 function handleChangeTitle(e) {
   setTitle(e.target.value)
