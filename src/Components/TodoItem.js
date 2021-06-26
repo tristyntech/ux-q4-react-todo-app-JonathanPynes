@@ -16,6 +16,7 @@ const TodoItem = (props) => {
         checked={isCompleted}
         onChange={() => props.handleComplete(id)}
       />
+      <button onClick={() => props.handleDelete(id)}>Delete</button>
     </li>
   );
 };

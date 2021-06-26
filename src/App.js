@@ -76,12 +76,17 @@ export default function App() {
     setTodoList(newList);
   }
 
+  function handleDeleteTodo(itemId) {
+    let lessOneTodo = [...todoList].filter((todo) => todo.id !== itemId);
+    setTodoList(lessOneTodo);
+  }
+
   return (
     <React.Fragment>
       <Content>
         <Sidebar user={user} />
         <h1>TODO</h1>
-        <ul>
+        <IncompleteTodo>
           {todoList
             .filter((todo) => !todo.isCompleted)
             .map((todo) => (
@@ -89,21 +94,24 @@ export default function App() {
                 todo={todo}
                 key={todo.id}
                 handleComplete={handleCompletedTodo}
+                handleDelete={handleDeleteTodo}
               />
             ))}
-        </ul>
-        <form>
-          <label>Add a Title</label>
+        </IncompleteTodo>
+        <InputField>
+          <label>Add a Title </label>
           <input id="new-title" onChange={handleChangeTitle} value={title} />
-          <label>Add the description</label>
+          <p> </p>
+          <label>Add the description </label>
           <input
             id="new-description"
             onChange={handleChangeDescription}
             value={description}
           />
-        </form>
+        </InputField>
+        <p> </p>
         <button onClick={() => handleButtonClick()}>Add New ToDo</button>
-
+        <p></p>
         <h2>COMPLETED TODO'S</h2>
         <CompletedTodo>
           {todoList
@@ -113,6 +121,7 @@ export default function App() {
                 todo={todo}
                 key={todo.id}
                 handleComplete={handleCompletedTodo}
+                handleDelete={handleDeleteTodo}
               />
             ))}
         </CompletedTodo>
@@ -121,6 +130,15 @@ export default function App() {
   );
 }
 
+const IncompleteTodo = styled.ul`
+  list-style: none;
+`;
+
+const InputField = styled.form`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
 const CompletedTodo = styled.ul`
   color: black;
   text-decoration-line: line-through;
