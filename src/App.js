@@ -39,6 +39,12 @@ export default function App() {
   const [description, setDescription] = useState("");
   //const [isCompleted, setIsCompleted] = useState("false")
 
+  function handleKeyPress(event) {
+    if (event.key === "Enter") {
+      handleButtonClick();
+    }
+  }
+
   function handleChangeTitle(e) {
     setTitle(e.target.value);
   }
@@ -100,13 +106,19 @@ export default function App() {
         </IncompleteTodo>
         <InputField>
           <label>Add a Title </label>
-          <input id="new-title" onChange={handleChangeTitle} value={title} />
+          <input
+            id="new-title"
+            value={title}
+            onChange={handleChangeTitle}
+            onKeyPress={handleKeyPress}
+          />
           <p> </p>
           <label>Add the description </label>
           <input
             id="new-description"
-            onChange={handleChangeDescription}
             value={description}
+            onChange={handleChangeDescription}
+            onKeyPress={handleKeyPress}
           />
         </InputField>
         <p> </p>
