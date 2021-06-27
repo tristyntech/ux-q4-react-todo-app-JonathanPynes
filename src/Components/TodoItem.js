@@ -11,7 +11,9 @@ const TodoItem = (props) => {
       <p>
         <BoldText>Description: </BoldText> {description}
       </p>
-      <label>Check when done!</label>
+      <label>
+        <em>Check when done!</em>
+      </label>
       <input
         type="checkbox"
         checked={isCompleted}
