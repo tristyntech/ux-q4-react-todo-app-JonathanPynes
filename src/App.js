@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 import "./App.css";
-import hamburger from "./images/Hamburger Menu.svg";
 import profile from "./images/Profile b&w.jpg";
 import Sidebar from "./Components/Sidebar";
 import TodoItem from "./Components/TodoItem";
@@ -30,10 +29,17 @@ export default function App() {
     },
   ]);
 
-  const [user, setUser] = useState({
-    name: "Jon",
-    avatar: profile,
-  });
+  // const [user, setUser] = useState({
+  //   name: "Jon",
+  //   avatar: profile,
+  // });
+
+  const user = [
+    {
+      user: "Jon Pynes",
+      avatar: profile,
+    },
+  ];
 
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
