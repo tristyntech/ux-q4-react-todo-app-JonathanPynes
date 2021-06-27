@@ -29,17 +29,17 @@ export default function App() {
     },
   ]);
 
-  // const [user, setUser] = useState({
-  //   name: "Jon",
-  //   avatar: profile,
-  // });
+  const [user, setUser] = useState({
+    name: "Jon",
+    avatar: profile,
+  });
 
-  const user = [
-    {
-      user: "Jon Pynes",
-      avatar: profile,
-    },
-  ];
+  // const user = [
+  //   {
+  //     user: "Jon Pynes",
+  //     avatar: profile,
+  //   },
+  // ];
 
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
