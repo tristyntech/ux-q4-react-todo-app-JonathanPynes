@@ -89,7 +89,7 @@ export default function App() {
   }
 
   function handleDeleteTodo(itemId) {
-    let lessOneTodo = [...todoList].filter((todo) => todo.id !== itemId);
+    let lessOneTodo = todoList.filter((todo) => todo.id !== itemId);
     setTodoList(lessOneTodo);
   }
 
