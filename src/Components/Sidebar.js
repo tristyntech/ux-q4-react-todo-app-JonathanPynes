@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import profile from "./images/Profile b&w.jpg";
 
 function Sidebar(props) {
   return (
