@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/ux-q4-react-todo-app-JonathanPynes/static/css/main.cfda8877.chunk.css",
-    "main.js": "/ux-q4-react-todo-app-JonathanPynes/static/js/main.83f6575b.chunk.js",
-    "main.js.map": "/ux-q4-react-todo-app-JonathanPynes/static/js/main.83f6575b.chunk.js.map",
+    "main.js": "/ux-q4-react-todo-app-JonathanPynes/static/js/main.34df0ab8.chunk.js",
+    "main.js.map": "/ux-q4-react-todo-app-JonathanPynes/static/js/main.34df0ab8.chunk.js.map",
     "runtime-main.js": "/ux-q4-react-todo-app-JonathanPynes/static/js/runtime-main.eba3001d.js",
     "runtime-main.js.map": "/ux-q4-react-todo-app-JonathanPynes/static/js/runtime-main.eba3001d.js.map",
     "static/js/2.fd057d3c.chunk.js": "/ux-q4-react-todo-app-JonathanPynes/static/js/2.fd057d3c.chunk.js",
     "static/js/2.fd057d3c.chunk.js.map": "/ux-q4-react-todo-app-JonathanPynes/static/js/2.fd057d3c.chunk.js.map",
     "index.html": "/ux-q4-react-todo-app-JonathanPynes/index.html",
-    "precache-manifest.a68e3564a0f88d930714674933d14ad3.js": "/ux-q4-react-todo-app-JonathanPynes/precache-manifest.a68e3564a0f88d930714674933d14ad3.js",
+    "precache-manifest.adc6040a7427177812125e8679792048.js": "/ux-q4-react-todo-app-JonathanPynes/precache-manifest.adc6040a7427177812125e8679792048.js",
     "service-worker.js": "/ux-q4-react-todo-app-JonathanPynes/service-worker.js",
     "static/css/main.cfda8877.chunk.css.map": "/ux-q4-react-todo-app-JonathanPynes/static/css/main.cfda8877.chunk.css.map",
     "static/js/2.fd057d3c.chunk.js.LICENSE.txt": "/ux-q4-react-todo-app-JonathanPynes/static/js/2.fd057d3c.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.eba3001d.js",
     "static/js/2.fd057d3c.chunk.js",
     "static/css/main.cfda8877.chunk.css",
-    "static/js/main.83f6575b.chunk.js"
+    "static/js/main.34df0ab8.chunk.js"
   ]
 }

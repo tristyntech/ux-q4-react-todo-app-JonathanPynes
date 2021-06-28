@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a39b90929b8f413036c1b2835b79f714",
+    "revision": "a24cab63f5bec1bf0a43ca21f42b8696",
     "url": "/ux-q4-react-todo-app-JonathanPynes/index.html"
   },
   {
-    "revision": "40501aad0a617fffe238",
+    "revision": "2bc38423a79fa41230e7",
     "url": "/ux-q4-react-todo-app-JonathanPynes/static/css/main.cfda8877.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ux-q4-react-todo-app-JonathanPynes/static/js/2.fd057d3c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "40501aad0a617fffe238",
-    "url": "/ux-q4-react-todo-app-JonathanPynes/static/js/main.83f6575b.chunk.js"
+    "revision": "2bc38423a79fa41230e7",
+    "url": "/ux-q4-react-todo-app-JonathanPynes/static/js/main.34df0ab8.chunk.js"
   },
   {
     "revision": "8d77db10f85fbe708f72",
